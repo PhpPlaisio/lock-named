@@ -1,0 +1,19 @@
+{
+  "name": "setbased/abc-lock-named",
+  "description": "ABC-Framework: Named Locks",
+  "keywords": [
+    "ABC-Framework",
+    "Lock",
+    "Named"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SetBased\\Abc\\Lock\\": "src/"
+    }
+  }
+}
