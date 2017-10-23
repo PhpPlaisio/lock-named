@@ -3,7 +3,7 @@
 namespace SetBased\Abc\Lock;
 
 /**
- * Interface for named locks that are released on commit or rollback.
+ * Interface for named locks that are released on commit, rollback or lost connection.
  */
 interface NamedLock
 {
@@ -11,19 +11,27 @@ interface NamedLock
   /**
    * Acquires a named lock.
    *
-   * @param string $name The name of the lock.
+   * @param int $id The ID of the named lock.
    *
    * @return void
    */
-  public function getLock($name);
+  public function getLock($id);
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Returns the name of the lock.
+   * Returns the name of the named lock.
    *
    * @return string|null
    */
   public function getName();
+
+  //--------------------------------------------------------------------------------------------------------------------
+  /**
+   * Returns the ID of the named lock.
+   *
+   * @return int|null
+   */
+  public function getId();
 
   //--------------------------------------------------------------------------------------------------------------------
 }
