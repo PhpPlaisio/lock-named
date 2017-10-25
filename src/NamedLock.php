@@ -18,20 +18,18 @@ interface NamedLock
   public function acquireLock($id);
 
   //--------------------------------------------------------------------------------------------------------------------
-
   /**
    * Returns the ID of the named lock.
    *
-   * @return int|null
+   * @return int
    */
   public function getId();
 
   //--------------------------------------------------------------------------------------------------------------------
-
   /**
    * Returns the name of the named lock.
    *
-   * @return string|null
+   * @return string
    */
   public function getName();
 
