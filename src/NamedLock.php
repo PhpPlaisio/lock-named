@@ -14,6 +14,9 @@ interface NamedLock
    * @param int $id The ID of the named lock.
    *
    * @return void
+   *
+   * @since 1.0.0
+   * @api
    */
   public function acquireLock($id);
 
@@ -22,6 +25,9 @@ interface NamedLock
    * Returns the ID of the named lock.
    *
    * @return int
+   *
+   * @since 1.0.0
+   * @api
    */
   public function getId();
 
@@ -30,6 +36,9 @@ interface NamedLock
    * Returns the name of the named lock.
    *
    * @return string
+   *
+   * @since 1.0.0
+   * @api
    */
   public function getName();
 
