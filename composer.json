@@ -1,19 +1,18 @@
 {
-  "name": "setbased/abc-lock-named",
-  "description": "ABC-Framework: Named Lock",
+  "name": "plaisio/lock-named",
+  "description": "PhpPlaisio: Named Lock",
   "keywords": [
-    "ABC-Framework",
+    "PhpPlaisio",
     "Lock",
     "Named"
   ],
-  "type": "library",
   "license": "MIT",
   "require": {
     "php": ">=7.1.0"
   },
   "autoload": {
     "psr-4": {
-      "SetBased\\Abc\\Lock\\": "src/"
+      "Plaisio\\Lock\\": "src/"
     }
   }
 }

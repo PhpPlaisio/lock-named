@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SetBased\Abc\Lock;
+namespace Plaisio\Lock;
 
 /**
  * Interface for named locks that are released on commit, rollback or lost connection.
