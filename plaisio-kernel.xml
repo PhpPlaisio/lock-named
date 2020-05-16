@@ -1,0 +1,9 @@
+<kernel>
+    <properties>
+        <property>
+            <type>\Plaisio\Lock\NamedLockFactory</type>
+            <name>namedLock</name>
+            <description>The helper object for named locks that are released on commit, rollback or lost connection.</description>
+        </property>
+    </properties>
+</kernel>
